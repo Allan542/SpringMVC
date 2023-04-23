@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="base :: headCust">
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+<div th:replace="base :: navlinks"></div>
+
+<div class="container mb-3">
+    <div class="alert alert-primary" role="alert">
+        Entre em contato
+    </div>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email...">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Options:</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Sugestões</option>
+            <option value="1">Dicas</option>
+            <option value="2">Conteúdo</option>
+            <option value="3">Linguagens</option>
+        </select>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div th:replace="base :: footer"></div>
+</body>
+</html>
